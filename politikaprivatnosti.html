@@ -12,30 +12,48 @@
 <body class="bg-slate-50 text-slate-800">
 
   <!-- HEADER -->
-  <header class="bg-blue-900 text-white shadow">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between gap-6">
+ <header class="bg-blue-900 text-white shadow">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
+    <!-- Logo -->
+    <a href="./index.html" class="flex items-center gap-3 min-w-0">
+      <img
+        src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.49.55(1).jpeg"
+        alt="Argradis d.o.o."
+        class="h-10 w-10 rounded-full object-cover shrink-0"
+      />
+      <span class="text-xl font-bold truncate">Argradis d.o.o.</span>
+    </a>
 
-      <a href="./index.html" class="flex items-center gap-3">
-        <img
-          src="./Agradis slike/logo.png"
-          alt="Argradis d.o.o."
-          class="site-logo"
-        />
-        <span class="text-xl font-bold whitespace-nowrap">Argradis d.o.o.</span>
-      </a>
-
-      <nav class="flex items-center gap-6 text-sm whitespace-nowrap">
-        <nav class="flex items-center gap-6 text-sm whitespace-nowrap">
+    <!-- Desktop nav -->
+    <nav class="hidden md:flex items-center gap-6 text-sm">
       <a href="./index.html" class="hover:text-blue-300">Početna</a>
-      <a href="./Onama.html" class="text-blue-300">O nama</a>
-      <a href="./index.html#usluge" class="hover:text-blue-300">Usluge</a>
+      <a href="./Onama.html" class="hover:text-blue-300">O nama</a>
+      <a href="./usluge.html" class="hover:text-blue-300">Usluge</a>
       <a href="./galerija.html" class="hover:text-blue-300">Galerija</a>
       <a href="./kontakt.html" class="hover:text-blue-300">Kontakt</a>
+      <a href="./politikaprivatnosti.html" class="hover:text-blue-300">Politika privatnosti</a>
     </nav>
-      </nav>
 
-    </div>
-  </header>
+    <!-- Mobile button -->
+    <button id="menuBtn" class="md:hidden inline-flex items-center justify-center p-2 rounded-lg hover:bg-blue-800"
+      aria-label="Otvori izbornik">
+      ☰
+    </button>
+  </div>
+
+  <!-- Mobile dropdown -->
+  <div id="mobileMenu" class="mobile-menu md:hidden border-t border-blue-800">
+    <nav class="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-2 text-sm">
+      <a href="./index.html" class="hover:text-blue-300">Početna</a>
+      <a href="./Onama.html" class="hover:text-blue-300">O nama</a>
+      <a href="./usluge.html" class="hover:text-blue-300">Usluge</a>
+      <a href="./galerija.html" class="hover:text-blue-300">Galerija</a>
+      <a href="./kontakt.html" class="hover:text-blue-300">Kontakt</a>
+      <a href="./politikaprivatnosti.html" class="hover:text-blue-300">Politika privatnosti</a>
+    </nav>
+  </div>
+</header>
+<div class="h-20"></div>
 
   <!-- SADRŽAJ -->
   <main class="max-w-4xl mx-auto px-4 py-16">

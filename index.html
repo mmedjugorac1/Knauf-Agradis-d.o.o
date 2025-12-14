@@ -1,75 +1,105 @@
 <!DOCTYPE html>
 <html lang="hr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Argradis d.o.o.</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <link rel="stylesheet" href="./stayle.css">
-
-  
-  <script src="./script.js" defer></script>
+  <link rel="stylesheet" href="./stayle.css" />
 </head>
 
-<body class="bg-slate-50 text-slate-800">
+<body class="bg-slate-50 text-slate-800" id="top">
 
-<header class="bg-blue-900 text-white py-4 shadow">
-  <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
-    <h1 class="text-xl font-bold">Argradis d.o.o.</h1>
-    <nav class="space-x-6 text-sm">
-      <a href="#usluge" class="hover:text-blue-300">Usluge</a>
-      <a href="#projekti" class="hover:text-blue-300">Projekti</a>
-      <a href="#kontakt" class="hover:text-blue-300">Kontakt</a>
-    </nav>
-  </div>
-</header>
+  <!-- HEADER -->
+  <header class="bg-blue-900 text-white shadow">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between gap-6">
 
-<section class="hero-section text-white py-24 text-center">
-  <h2 class="text-4xl font-bold mb-4">Knauf radovi</h2>
-  <p class="text-lg mb-6">Pregradni zidovi, spušteni stropovi i izolacija.</p>
-  <a href="#kontakt" class="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold">Pošalji upit</a>
-</section>
+      <a href="#top" class="flex items-center gap-3">
+        <img
+          src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.49.55(1).jpeg"
+          alt="Argradis d.o.o."
+          class="h-10 w-10 rounded-full object-cover"
+        />
+        <span class="text-xl font-bold">Argradis d.o.o.</span>
+      </a>
 
-<section id="usluge" class="max-w-6xl mx-auto px-4 py-16">
-  <h2 class="text-3xl font-bold mb-8 text-center">Naše usluge</h2>
+      <nav class="flex items-center gap-6 text-sm whitespace-nowrap">
+        <a href="#top" class="hover:text-blue-300">Početna</a>
+        <a href="./Onama.html" class="hover:text-blue-300">O nama</a>
+        <a href="#usluge" class="hover:text-blue-300">Usluge</a>
+        <a href="./galerija.html" class="hover:text-blue-300">Galerija</a>
+        <a href="./kontakt.html" class="hover:text-blue-300">Kontakt</a>
+        <a href="./politikaprivatnosti.html">Politika privatnosti</a>
+      </nav>
 
-  <div class="grid md:grid-cols-3 gap-6">
-    <div class="service-box">
-      <h3>Pregradni zidovi</h3>
-      <p>Izvedba Knauf zidova sa izolacijom.</p>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-section">
+    <div class="hero-inner">
+      <h2>Knauf radovi</h2>
+      <p>Pregradni zidovi, spušteni stropovi i izolacija.</p>
+    </div>
+  </section>
+
+  <!-- USLUGE -->
+  <section id="usluge" class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold mb-6 text-center">Naše usluge</h2>
+
+    <p class="text-center text-slate-600 max-w-3xl mx-auto mb-10">
+      Izvodimo kompletnu suhu gradnju – od pregradnih zidova do spuštenih stropova
+      i toplinske te zvučne izolacije, uz preciznu i kvalitetnu izvedbu.
+    </p>
+
+    <!-- KARTICE -->
+    <div class="grid md:grid-cols-3 gap-6">
+      <a href="#usluga-zidovi" class="service-box block hover:-translate-y-1 transition">
+        <h3>Pregradni zidovi</h3>
+        <p>Izvedba Knauf zidova sa izolacijom.</p>
+      </a>
+
+      <a href="#usluga-stropovi" class="service-box block hover:-translate-y-1 transition">
+        <h3>Spušteni stropovi</h3>
+        <p>Moderne izvedbe, rasvjeta i dekoracija.</p>
+      </a>
+
+      <a href="#usluga-izolacija" class="service-box block hover:-translate-y-1 transition">
+        <h3>Toplinska i zvučna izolacija</h3>
+        <p>Izolacija za stanove, kuće i urede.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- DETALJNI OPISI -->
+  <section class="max-w-6xl mx-auto px-4 pb-16 space-y-6">
+
+    <div id="usluga-zidovi" class="bg-white rounded-xl shadow p-6">
+      <h3 class="text-xl font-bold mb-2">Pregradni zidovi</h3>
+      <p class="text-slate-600">
+        Izrada pregradnih Knauf zidova s ugradnjom toplinske i zvučne izolacije,
+        priprema za elektro i vodoinstalacije te završna obrada po dogovoru.
+      </p>
     </div>
 
-    <div class="service-box">
-      <h3>Spušteni stropovi</h3>
-      <p>Moderne izvedbe, rasvjeta i dekoracija.</p>
+    <div id="usluga-stropovi" class="bg-white rounded-xl shadow p-6">
+      <h3 class="text-xl font-bold mb-2">Spušteni stropovi</h3>
+      <p class="text-slate-600">
+        Izvedba ravnih i stepenastih spuštenih stropova, priprema za rasvjetu,
+        LED trake i revizijske otvore, s preciznom završnom obradom.
+      </p>
     </div>
 
-    <div class="service-box">
-      <h3>Toplinska i zvučna izolacija</h3>
-      <p>Izolacija za stanove, kuće i urede.</p>
+    <div id="usluga-izolacija" class="bg-white rounded-xl shadow p-6">
+      <h3 class="text-xl font-bold mb-2">Toplinska i zvučna izolacija</h3>
+      <p class="text-slate-600">
+        Kvalitetna izolacija stambenih i poslovnih prostora radi poboljšanja
+        energetske učinkovitosti i zvučne ugodnosti prostora.
+      </p>
     </div>
-  </div>
-</section>
 
-<section id="kontakt" class="bg-blue-900 text-white py-16">
-  <div class="max-w-md mx-auto px-4">
-    <h2 class="text-3xl font-bold mb-4 text-center">Kontakt</h2>
-
-    <form id="contactForm" class="space-y-4 bg-white text-black p-6 rounded-xl">
-      <input type="text" id="name" placeholder="Ime i prezime" class="input-field">
-      <input type="email" id="email" placeholder="Email" class="input-field">
-      <textarea id="message" rows="4" placeholder="Vaša poruka" class="input-field"></textarea>
-
-      <button class="bg-blue-900 text-white px-4 py-2 rounded-lg w-full hover:bg-blue-700">
-        Pošalji
-      </button>
-    </form>
-
-    <p id="formMsg" class="text-center mt-4 font-semibold"></p>
-  </div>
-</section>
+  </section>
 
 </body>
 </html>

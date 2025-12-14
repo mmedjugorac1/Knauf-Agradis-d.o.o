@@ -1,47 +1,83 @@
-.hero-section {
-    position: relative;
-    background-image: url("https://images.unsplash.com/photo-1586788224331-0c3a884bd5df?w=1200");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+html, body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
 }
 
-.hero-section::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.45);
+.hero-section{
+  position: relative;
+  min-height: 45vh;          
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background-image: url("./Agradis slike/agradisnaslovnica.PNG");
+  background-size: cover;     
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-color: #0f2a6d;  
+  padding: 64px 16px;
 }
 
-.hero-section > * {
-    position: relative;
-    z-index: 1;
+
+.hero-section::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.30);
 }
 
-
-.service-box {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    text-align: center;
+.hero-inner{
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
 }
 
-.service-box h3 {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: 10px;
+.hero-inner h2{
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 12px;
+  text-shadow: 0 6px 20px rgba(0,0,0,0.6);
 }
 
-.input-field {
-    width: 100%;
-    border: 1px solid #cbd5e1;
-    padding: 10px;
-    border-radius: 8px;
-    outline: none;
+.hero-inner p{
+  font-size: 1.1rem;
+  color: white;
+  text-shadow: 0 4px 16px rgba(0,0,0,0.6);
 }
 
-.input-field:focus {
-    border-color: #1e3a8a;
-    box-shadow: 0 0 4px rgba(30,58,138,0.3);
+.service-box{
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
+
+.service-box h3{
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.site-logo {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;      /* popuni krug */
+  border-radius: 50%;     /* savršeni krug */
+  display: block;
+}
+.site-logo {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+.lb-backdrop { display: none; }
+.lb-backdrop.open { display: flex; }

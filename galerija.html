@@ -7,17 +7,21 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./stayle.css" />
+  <script src="./galerija.js" defer></script>
+  <meta name="description" content="Argradis d.o.o. – Knauf radovi, suha gradnja, spušteni stropovi, pregradni zidovi i izolacije. Kvalitetna i precizna izvedba." />
+<meta name="keywords" content="knauf radovi, suha gradnja, spušteni stropovi, pregradni zidovi, izolacija, Argradis" />
+<meta name="author" content="Argradis d.o.o." />
 </head>
 
 <body class="bg-slate-50 text-slate-800">
 
-  <!-- HEADER -->
-  <header class="bg-blue-900 text-white shadow">
+  <header class="bg-blue-900 text-white shadow relative z-50">
   <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
+
     <!-- Logo -->
     <a href="./index.html" class="flex items-center gap-3 min-w-0">
       <img
-        src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.49.55(1).jpeg"
+        src="./Agradisslike/agradispxxl.jpeg"
         alt="Argradis d.o.o."
         class="h-10 w-10 rounded-full object-cover shrink-0"
       />
@@ -31,33 +35,30 @@
       <a href="./usluge.html" class="hover:text-blue-300">Usluge</a>
       <a href="./galerija.html" class="hover:text-blue-300">Galerija</a>
       <a href="./kontakt.html" class="hover:text-blue-300">Kontakt</a>
-      <a href="./politikaprivatnosti.html" class="hover:text-blue-300">Politika privatnosti</a>
     </nav>
 
-    <!-- Mobile button -->
-    <button id="menuBtn" class="md:hidden inline-flex items-center justify-center p-2 rounded-lg hover:bg-blue-800"
-      aria-label="Otvori izbornik">
-      ☰
-    </button>
-  </div>
+    <!-- Mobile nav (bez JS) -->
+    <details class="md:hidden relative">
+      <summary
+        class="list-none cursor-pointer flex items-center justify-center h-10 w-10 rounded-lg bg-blue-800 hover:bg-blue-700 transition"
+        aria-label="Otvori izbornik"
+      >
+        ☰
+      </summary>
 
-  <!-- Mobile dropdown -->
-  <div id="mobileMenu" class="mobile-menu md:hidden border-t border-blue-800">
-    <nav class="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-2 text-sm">
-      <a href="./index.html" class="hover:text-blue-300">Početna</a>
-      <a href="./Onama.html" class="hover:text-blue-300">O nama</a>
-      <a href="./usluge.html" class="hover:text-blue-300">Usluge</a>
-      <a href="./galerija.html" class="hover:text-blue-300">Galerija</a>
-      <a href="./kontakt.html" class="hover:text-blue-300">Kontakt</a>
-      <a href="./politikaprivatnosti.html" class="hover:text-blue-300">Politika privatnosti</a>
-    </nav>
+      <nav class="absolute right-0 mt-3 w-56 bg-blue-900 border border-blue-800 rounded-xl shadow-lg p-3 flex flex-col gap-2 text-sm">
+        <a href="./index.html" class="hover:text-blue-300">Početna</a>
+        <a href="./Onama.html" class="hover:text-blue-300">O nama</a>
+        <a href="./usluge.html" class="hover:text-blue-300">Usluge</a>
+        <a href="./galerija.html" class="hover:text-blue-300">Galerija</a>
+        <a href="./kontakt.html" class="hover:text-blue-300">Kontakt</a>
+      </nav>
+    </details>
+
   </div>
 </header>
-<div class="h-20"></div>
 
-  <!-- SADRŽAJ -->
   <main class="max-w-6xl mx-auto px-4 py-16">
-
     <h1 class="text-3xl font-bold mb-4">Galerija</h1>
 
     <p class="text-slate-600 max-w-3xl mb-10">
@@ -66,193 +67,21 @@
       knauf radova, spuštenih stropova i izolacija.
     </p>
 
-    <!-- GALERIJA GRID -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-      <!-- 13:18:38 -->
-       <!-- 13:18:40 dodatne -->
-<button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.40 (3).jpeg">
-  <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.40 (3).jpeg" class="w-full h-60 object-cover rounded-xl shadow">
-</button>
-
-<button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.40 (4).jpeg">
-  <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.40 (4).jpeg" class="w-full h-60 object-cover rounded-xl shadow">
-</button>
-
-<button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.40 (5).jpeg">
-  <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.40 (5).jpeg" class="w-full h-60 object-cover rounded-xl shadow">
-</button>
-
-<button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.40 (6).jpeg">
-  <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.40 (6).jpeg" class="w-full h-60 object-cover rounded-xl shadow">
-</button>
-
-<!-- 13:18:41 -->
-<button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.41.jpeg">
-  <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.41.jpeg" class="w-full h-60 object-cover rounded-xl shadow">
-</button>
-
-<button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.41 (1).jpeg">
-  <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.41 (1).jpeg" class="w-full h-60 object-cover rounded-xl shadow">
-</button>
-
-<button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.41 (2).jpeg">
-  <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.41 (2).jpeg" class="w-full h-60 object-cover rounded-xl shadow">
-</button>
-
-<button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.41 (3).jpeg">
-  <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.41 (3).jpeg" class="w-full h-60 object-cover rounded-xl shadow">
-</button>
-
-<button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.41 (4).jpeg">
-  <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.41 (4).jpeg" class="w-full h-60 object-cover rounded-xl shadow">
-</button>
-
-<button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.41 (5).jpeg">
-  <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.41 (5).jpeg" class="w-full h-60 object-cover rounded-xl shadow">
-</button>
-
-<!-- 13:23:19 -->
-<button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.23.19.jpeg">
-  <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.23.19.jpeg" class="w-full h-60 object-cover rounded-xl shadow">
-</button>
-
-<button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.23.19 (1).jpeg">
-  <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.23.19 (1).jpeg" class="w-full h-60 object-cover rounded-xl shadow">
-</button>
-
-<button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.23.19 (2).jpeg">
-  <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.23.19 (2).jpeg" class="w-full h-60 object-cover rounded-xl shadow">
-</button>
-
-<button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.23.19 (3).jpeg">
-  <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.23.19 (3).jpeg" class="w-full h-60 object-cover rounded-xl shadow">
-</button>
-
-<button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.23.19 (4).jpeg">
-  <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.23.19 (4).jpeg" class="w-full h-60 object-cover rounded-xl shadow">
-</button>
-
-<!-- 13:23:45 -->
-<button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.23.45.jpeg">
-  <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.23.45.jpeg" class="w-full h-60 object-cover rounded-xl shadow">
-</button>
-
-<button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.23.45 (1).jpeg">
-  <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.23.45 (1).jpeg" class="w-full h-60 object-cover rounded-xl shadow">
-</button>
-
-<!-- 13:26:38 -->
-<button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.26.38.jpeg">
-  <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.26.38.jpeg" class="w-full h-60 object-cover rounded-xl shadow">
-</button>
-
-<button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.26.38 (1).jpeg">
-  <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.26.38 (1).jpeg" class="w-full h-60 object-cover rounded-xl shadow">
-</button>
-
-<button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.26.38 (2).jpeg">
-  <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.26.38 (2).jpeg" class="w-full h-60 object-cover rounded-xl shadow">
-</button>
-
-<button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.26.38 (3).jpeg">
-  <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.26.38 (3).jpeg" class="w-full h-60 object-cover rounded-xl shadow">
-</button>
-
-<button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.26.38 (4).jpeg">
-  <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.26.38 (4).jpeg" class="w-full h-60 object-cover rounded-xl shadow">
-</button>
-</button>
-      <button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.38.jpeg">
-        <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.38.jpeg"
-             class="w-full h-60 object-cover rounded-xl shadow">
-      </button>
-
-      <button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.38 (1).jpeg">
-        <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.38 (1).jpeg"
-             class="w-full h-60 object-cover rounded-xl shadow">
-      </button>
-
-      <button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.38 (2).jpeg">
-        <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.38 (2).jpeg"
-             class="w-full h-60 object-cover rounded-xl shadow">
-      </button>
-
-      <button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.38 (3).jpeg">
-        <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.38 (3).jpeg"
-             class="w-full h-60 object-cover rounded-xl shadow">
-      </button>
-
-      <button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.38 (4).jpeg">
-        <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.38 (4).jpeg"
-             class="w-full h-60 object-cover rounded-xl shadow">
-      </button>
-
-      <button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.38 (5).jpeg">
-        <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.38 (5).jpeg"
-             class="w-full h-60 object-cover rounded-xl shadow">
-      </button>
-
-      <!-- 13:18:39 -->
-      <button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.39.jpeg">
-        <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.39.jpeg"
-             class="w-full h-60 object-cover rounded-xl shadow">
-      </button>
-
-      <button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.39 (1).jpeg">
-        <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.39 (1).jpeg"
-             class="w-full h-60 object-cover rounded-xl shadow">
-      </button>
-
-      <button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.39 (2).jpeg">
-        <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.39 (2).jpeg"
-             class="w-full h-60 object-cover rounded-xl shadow">
-      </button>
-
-      <!-- 13:18:40 -->
-      <button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.40.jpeg">
-        <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.40.jpeg"
-             class="w-full h-60 object-cover rounded-xl shadow">
-      </button>
-
-      <button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.40 (1).jpeg">
-        <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.40 (1).jpeg"
-             class="w-full h-60 object-cover rounded-xl shadow">
-      </button>
-
-      <button data-full="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.40 (2).jpeg">
-        <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.18.40 (2).jpeg"
-             class="w-full h-60 object-cover rounded-xl shadow">
-      </button>
-
-    </div>
-
-    <div class="mt-10 bg-blue-50 border border-blue-100 rounded-lg p-4">
-      <p class="font-medium">
-        Za dodatne informacije ili ponudu slobodno nas kontaktirajte putem e-maila ili telefona.
-      </p>
-    </div>
+   <div id="galleryGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
 
   </main>
 
-  <!-- LIGHTBOX -->
-  <div id="lightbox" class="lb-backdrop fixed inset-0 z-50 items-center justify-center bg-black/80 p-4">
+  <div id="lightbox" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4">
     <div class="max-w-5xl w-full">
       <div class="flex justify-end mb-3">
         <button id="lbClose"
-          class="text-white text-sm bg-white/10 hover:bg-white/20 px-3 py-2 rounded-lg">
-          Zatvori ✕
-        </button>
+          class="text-white text-sm bg-white/10 hover:bg-white/20 px-3 py-2 rounded-lg"
+          type="button">Zatvori ✕</button>
       </div>
-      <img id="lbImg"
-           src=""
-           alt="Pregled slike"
-           class="w-full max-h-[80vh] object-contain rounded-xl bg-black">
+      <img id="lbImg" src="" alt="Pregled slike"
+        class="w-full max-h-[80vh] object-contain rounded-xl bg-black">
     </div>
   </div>
-
-  <!-- JS -->
-  <script src="./galerija.js"></script>
 
 </body>
 </html>

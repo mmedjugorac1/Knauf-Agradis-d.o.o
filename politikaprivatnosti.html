@@ -7,17 +7,22 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./stayle.css" />
+  <script src="./galerija.js"></script>
+    <meta name="description" content="Argradis d.o.o. – Knauf radovi, suha gradnja, spušteni stropovi, pregradni zidovi i izolacije. Kvalitetna i precizna izvedba." />
+<meta name="keywords" content="knauf radovi, suha gradnja, spušteni stropovi, pregradni zidovi, izolacija, Argradis" />
+<meta name="author" content="Argradis d.o.o." />
 </head>
 
 <body class="bg-slate-50 text-slate-800">
 
   <!-- HEADER -->
- <header class="bg-blue-900 text-white shadow">
+ <header class="bg-blue-900 text-white shadow relative z-50">
   <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
+
     <!-- Logo -->
     <a href="./index.html" class="flex items-center gap-3 min-w-0">
       <img
-        src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.49.55(1).jpeg"
+        src="./Agradisslike/agradispxxl.jpeg"
         alt="Argradis d.o.o."
         class="h-10 w-10 rounded-full object-cover shrink-0"
       />
@@ -31,26 +36,26 @@
       <a href="./usluge.html" class="hover:text-blue-300">Usluge</a>
       <a href="./galerija.html" class="hover:text-blue-300">Galerija</a>
       <a href="./kontakt.html" class="hover:text-blue-300">Kontakt</a>
-      <a href="./politikaprivatnosti.html" class="hover:text-blue-300">Politika privatnosti</a>
     </nav>
 
-    <!-- Mobile button -->
-    <button id="menuBtn" class="md:hidden inline-flex items-center justify-center p-2 rounded-lg hover:bg-blue-800"
-      aria-label="Otvori izbornik">
-      ☰
-    </button>
-  </div>
+    <!-- Mobile nav (bez JS) -->
+    <details class="md:hidden relative">
+      <summary
+        class="list-none cursor-pointer flex items-center justify-center h-10 w-10 rounded-lg bg-blue-800 hover:bg-blue-700 transition"
+        aria-label="Otvori izbornik"
+      >
+        ☰
+      </summary>
 
-  <!-- Mobile dropdown -->
-  <div id="mobileMenu" class="mobile-menu md:hidden border-t border-blue-800">
-    <nav class="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-2 text-sm">
-      <a href="./index.html" class="hover:text-blue-300">Početna</a>
-      <a href="./Onama.html" class="hover:text-blue-300">O nama</a>
-      <a href="./usluge.html" class="hover:text-blue-300">Usluge</a>
-      <a href="./galerija.html" class="hover:text-blue-300">Galerija</a>
-      <a href="./kontakt.html" class="hover:text-blue-300">Kontakt</a>
-      <a href="./politikaprivatnosti.html" class="hover:text-blue-300">Politika privatnosti</a>
-    </nav>
+      <nav class="absolute right-0 mt-3 w-56 bg-blue-900 border border-blue-800 rounded-xl shadow-lg p-3 flex flex-col gap-2 text-sm">
+        <a href="./index.html" class="hover:text-blue-300">Početna</a>
+        <a href="./Onama.html" class="hover:text-blue-300">O nama</a>
+        <a href="./usluge.html" class="hover:text-blue-300">Usluge</a>
+        <a href="./galerija.html" class="hover:text-blue-300">Galerija</a>
+        <a href="./kontakt.html" class="hover:text-blue-300">Kontakt</a>
+      </nav>
+    </details>
+
   </div>
 </header>
 <div class="h-20"></div>
@@ -168,6 +173,5 @@
     </div>
 
   </main>
-
 </body>
 </html>

@@ -7,27 +7,54 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./stayle.css">
+  <script src="./galerija.js"></script>
+    <meta name="description" content="Argradis d.o.o. – Knauf radovi, suha gradnja, spušteni stropovi, pregradni zidovi i izolacije. Kvalitetna i precizna izvedba." />
+<meta name="keywords" content="knauf radovi, suha gradnja, spušteni stropovi, pregradni zidovi, izolacija, Argradis" />
+<meta name="author" content="Argradis d.o.o." />
 </head>
 
 <body class="bg-slate-50 text-slate-800">
 
 <!-- HEADER (isti kao svugdje) -->
-<header class="bg-blue-900 text-white shadow">
+<header class="bg-blue-900 text-white shadow relative z-50">
   <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
 
-    <a href="./index.html" class="flex items-center gap-3">
-      <img src="./Agradis slike/WhatsApp Image 2025-12-13 at 13.49.55(1).jpeg"
-           class="h-10 w-10 rounded-full object-cover" alt="Argradis">
-      <span class="text-xl font-bold">Argradis d.o.o.</span>
+    <!-- Logo -->
+    <a href="./index.html" class="flex items-center gap-3 min-w-0">
+      <img
+        src="./Agradisslike/agradispxxl.jpeg"
+        alt="Argradis d.o.o."
+        class="h-10 w-10 rounded-full object-cover shrink-0"
+      />
+      <span class="text-xl font-bold truncate">Argradis d.o.o.</span>
     </a>
 
-    <nav class="hidden md:flex gap-6 text-sm">
-      <a href="./index.html">Početna</a>
-      <a href="./Onama.html">O nama</a>
-      <a href="./usluge.html" class="text-blue-300">Usluge</a>
-      <a href="./galerija.html">Galerija</a>
-      <a href="./kontakt.html">Kontakt</a>
+    <!-- Desktop nav -->
+    <nav class="hidden md:flex items-center gap-6 text-sm">
+      <a href="./index.html" class="hover:text-blue-300">Početna</a>
+      <a href="./Onama.html" class="hover:text-blue-300">O nama</a>
+      <a href="./usluge.html" class="hover:text-blue-300">Usluge</a>
+      <a href="./galerija.html" class="hover:text-blue-300">Galerija</a>
+      <a href="./kontakt.html" class="hover:text-blue-300">Kontakt</a>
     </nav>
+
+    <!-- Mobile nav (bez JS) -->
+    <details class="md:hidden relative">
+      <summary
+        class="list-none cursor-pointer flex items-center justify-center h-10 w-10 rounded-lg bg-blue-800 hover:bg-blue-700 transition"
+        aria-label="Otvori izbornik"
+      >
+        ☰
+      </summary>
+
+      <nav class="absolute right-0 mt-3 w-56 bg-blue-900 border border-blue-800 rounded-xl shadow-lg p-3 flex flex-col gap-2 text-sm">
+        <a href="./index.html" class="hover:text-blue-300">Početna</a>
+        <a href="./Onama.html" class="hover:text-blue-300">O nama</a>
+        <a href="./usluge.html" class="hover:text-blue-300">Usluge</a>
+        <a href="./galerija.html" class="hover:text-blue-300">Galerija</a>
+        <a href="./kontakt.html" class="hover:text-blue-300">Kontakt</a>
+      </nav>
+    </details>
 
   </div>
 </header>
@@ -73,6 +100,66 @@
   </div>
 
 </section>
+<!-- FOOTER -->
+<footer class="bg-blue-900 text-white mt-16">
+  <div class="max-w-6xl mx-auto px-4 py-10 grid gap-8 md:grid-cols-3 text-sm">
 
+    <!-- LOGO + OPIS -->
+    <div class="flex flex-col gap-3">
+      <div class="flex items-center gap-3">
+        <img
+          src="./Agradisslike/agradispxxl.jpeg"
+          alt="Argradis d.o.o. logo"
+          class="h-12 w-12 rounded-full object-cover"
+        />
+        <span class="text-lg font-semibold">Argradis d.o.o.</span>
+      </div>
+      <p class="text-blue-200">
+        Knauf radovi, suha gradnja, spušteni stropovi i izolacije.
+      </p>
+    </div>
+
+    <!-- KONTAKT -->
+    <div class="flex flex-col gap-2">
+      <p class="font-semibold text-base mb-1">Kontakt</p>
+
+      <p>
+        📍 <span class="text-blue-200"> Zaprešić</span>
+      </p>
+
+      <p>
+        📞
+        <a href="tel:+385955303836" class="text-blue-200 hover:text-blue-300">
+          +385 95 530 3836
+        </a>
+      </p>
+
+      <p>
+        ✉️
+        <a href="mailto:info@argradis.hr" class="text-blue-200 hover:text-blue-300">
+          info@argradis.hr
+        </a>
+      </p>
+    </div>
+
+    <!-- LINKOVI -->
+    <div class="flex flex-col gap-2 md:items-end">
+      <p class="font-semibold text-base mb-1">Informacije</p>
+
+      <a href="./politikaprivatnosti.html" class="hover:text-blue-300">
+        Politika privatnosti
+      </a>
+
+      <a href="#top" class="hover:text-blue-300">
+        Povratak na vrh ↑
+      </a>
+    </div>
+
+  </div>
+
+  <div class="border-t border-blue-800 py-4 text-center text-blue-300 text-xs">
+    © 2025 Argradis d.o.o. Sva prava pridržana.
+  </div>
+</footer>
 </body>
 </html>

@@ -14,7 +14,7 @@ html {
   justify-content: center;
   text-align: center;
 
-  background-image: url("./Agradis slike/agradisnaslovnica.PNG");
+  background-image: url("./Agradisslike/Agradisslike18.PNG");
   background-size: cover;     
   background-position: center;
   background-repeat: no-repeat;
@@ -58,11 +58,13 @@ html {
   text-align: center;
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
+.service-box {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-.service-box h3{
-  font-size: 1.25rem;
-  font-weight: 800;
-  margin-bottom: 10px;
+.service-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 30px rgba(0,0,0,0.15);
 }
 .site-logo {
   width: 44px;
@@ -79,5 +81,5 @@ html {
   display: block;
 }
 
-.lb-backdrop { display: none; }
-.lb-backdrop.open { display: flex; }
+#mobileMenu { display: none; }
+#mobileMenu.open { display: block; }
